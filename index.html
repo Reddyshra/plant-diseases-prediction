@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leaf Disease Detection</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LEAF DISEASE PREDICTION</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Predict</button>
+        </form>
+        {% if prediction %}
+        <div class="result">
+            <h2>Prediction: {{ prediction }}</h2>
+            <h3>Confidence: {{ confidence|round(2) }}%</h3>
+            <img src="/{{ image_url }}" alt="Uploaded Image">
+        </div>
+        {% endif %}
+    </div>
+</body>
+<footer>
+    <p>&copy; 2025 Leaf Disease Detection. Developed By Shravani Reddy From MCA(CC).</p>
+</footer>
+
+</html> 
