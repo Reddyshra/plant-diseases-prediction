@@ -1,0 +1,1 @@
+plant leaves disease prediction model build using CNN model , tenserflow and flask for frontend.![Screenshot 2025-04-15 184850](https://github.com/user-attachments/assets/05cf034d-edf5-4211-a53c-e4abfe398c46)
